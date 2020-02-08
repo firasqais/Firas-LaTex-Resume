@@ -1,0 +1,231 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{{Firas Al-Doughman}}
+% \tagline{Outlandish IT Manager, Technical Hoarder \& Proud Geek}
+
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{isso}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \normalsize{\email{firasqais@yahoo.com}}
+    \phone{0451940204}
+  \location{Sydney, Australia}
+  
+   \linkedin{linkedin.com/in/firasal-doghman}
+    \twitter{@firasqais}
+    \github{github.com/firasqais}
+    
+    % web: www.techchain.me
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Education}
+\addnextpagesidebar[-1ex]{page2sidebar}
+\cvevent{PhD in Engineering and Information Technology}{University of Technology Sydney}{Dec. 2015 - Dec. 2019}{Sydney, Australia}
+\newline
+\begin{itemize}
+    \item \textbf{Title}: ``CONSENSUS-BASED DATA MANAGEMENT WITHIN FOG COMPUTING FOR THE INTERNET OF THINGS''
+    \item \textbf{Supervisors}: Zenon Chaczko \& Wayne Brooke
+    \item \textbf{Thesis area}: IoT, Fog Computing, Data Management and Machine Learning
+\end{itemize}
+\newline
+\divider
+
+\cvevent{Master Degree in Computer Engineering}{Al-Nahrain University}{Sept. 2005 - Apr. 2009}{Baghdad, Iraq}
+\newline
+\begin{itemize}
+    \item \textbf{Thesis Title}: `` Design and Implementation of FPGA Download Interface''
+\end{itemize}
+\newline
+\divider
+
+\cvevent{Bachelor Degree in Computer Engineering}{Al-Nahrain University}{Sept. 1999 - Sept. 2003}{Baghdad, Iraq}
+\newline
+
+
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Graduate Researcher}{University of Technology Sydney}{Jul 2015 -- Dec 2019}{Sydney, Australia}
+\begin{itemize}
+\item \textbf{Project:} Fog Computing Data Management in IoT 
+\item \textbf{Duties:}
+\begin{itemize}
+    \item Developed materials and methods for data collection and analysis.
+    \item Investigated and developed machine learning algorithms for managing Fog environment data within IoT.
+    \item Design and development of environment monitoring test-bed using embedded platforms including Raspberry Pi and Texas Instruments SensorTags.
+    \item Conduct statistical analyses of data sets
+    \item Developed an algorithm that construct collaborative decision making within IoT using analytical techniques.
+    \item Proposing and implementing Deep Learning models (LSTM) for Daily Life Activities (DLA) recognition in smart homes.
+    \item Performed data analysis of the results obtained from various experiments and presented them in form of graphs.
+    \item Designed and created a scientific posters and papers presented at various conferences and seminars.
+    
+\end{itemize}
+
+
+\end{itemize}
+\divider
+
+\cvevent{IT and Data Analysis Administrator}{Hala Communications}{Feb 2004 -- Feb 2015}{Baghdad, Iraq}
+\begin{itemize}
+
+\item Analyze market-related data, extract desired statistics and evaluate market status using Excel.
+\item Researching, analyzing, evaluating and monitoring network infrastructure to ensure networks are configured to operate at optimal performance.
+\item Monitoring network traffic, and activity, capacity and usage to ensure continued integrity and optimal network performance. 
+\item Maintaining network functionality and evaluating performance in existing sites along with being responsible for maintaining the central site system (headquarter) serving about 100 employees.
+\item Designing and leading the initial operation of four other sites in the capital city.
+\item Assigning privileges and providing training and support for new system users.
+\item Planning, setting specifications, development, and installation of complete IT infrastructure for new sites. This includes handling the purchase of hardware components (from PC and workstations to Server racks, switches and routers) and software systems (operating systems and application software).
+\item Prepared the Business Plan for the Company for the years from 2005 to 2010.
+\item Leading the planning and deployment of “etopup” Point of Sale system by being responsible for deploying the system, putting it in action and providing technical support for network issues.
+\end{itemize}
+
+
+\divider
+
+\cvevent{Tutor}{UTS}{Jul 2017 -- present}{Sydney, Australia}
+\begin{itemize}
+\item Deliver tutorials about Technology Research Preparation (TRP) (2017-2019), Network Fundamentals (2018-2019),
+Security Fundamentals(2019), the Internet of Things (2018-2019), Image Processing and Pattern Recognition (2019).
+\item Develop critical thinking through inquisitive discussions.
+\item Connect with students on a technical and collaborative level enabling them to generate more interest on the course material.
+\item Pitch new ideas for projects and case studies, promote group activities on latest tech trends and scientific problems to create ideas.
+\item Examining and exploiting flawed software routines using C Programming in Linux environment.
+\item Analyse various components of the Internet to select the most appropriate network services including protocol layering and service models.
+\item Examine and explain end-to-end packet delivery throughout the network system to gain insight into the behaviour of the Internet.
+\item Differentiate between acceptable and unacceptable aspects of system design that affect or compromise security principles by assessing code. 
+\item Explain an integrated, multidisciplinary approach for IoT based solutions, and apply it to real-world scenarios. 
+\item Explain the principles of sensing/actuation, data transmission and processing, visualisation and analytics, as well as, cybersecurity issues in IoT.
+\item Use foundational techniques of image processing and analysis such as filtering, segmentation and local features to solve image processing problems of real world application.
+\item Use image processing and pattern recognition techniques to detect objects and activities in images and video.
+
+\end{itemize}
+
+
+\divider
+
+\cvevent{Assistant Lecturer}{Staff Development center (SDC)}{May 2010 -- Feb 2015}{Baghdad, Iraq}
+\begin{itemize}
+\item Prepare and deliver lectures for the training programs according to advanced teaching methodologies.
+\item Managed some of the training programs which held by the IT group of SDC.
+\item Instructing and assisting labs during some programs.
+\item leading and performing Computers and IT maintenance department.
+\item Appointed to several Procurement committees as a team leader.
+\end{itemize}
+
+
+
+% \cvevent{Product Manager \& UI Lead}{Google}{Oct 2001 -- July 2005}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Appointed by the founder Larry Page in 2001 to lead the Product Management and User Interaction teams
+% \item Optimized Google's homepage and A/B tested every minor detail to increase usability (incl.~spacing between words, % color schemes and pixel-by-pixel element alignment)
+% \end{itemize}
+%
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+% 
+% \nocite{*}
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+% 
+% \divider
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+% 
+% \divider
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+% 
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
